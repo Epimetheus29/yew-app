@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Yew App</title>
+    <style>
+        /* Base styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #6200ea;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #bb86fc;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            margin-top: 0;
+        }
+
+        .content p {
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background: #6200ea;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">My Yew App</div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to My Yew App</h1>
+        <p>Building fast and modern web applications with Rust and WebAssembly.</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h2>About This App</h2>
+        <p>
+            This application is powered by the Yew framework, allowing you to create fast,
+            reactive web apps with Rust. Yew combines the performance of WebAssembly
+            with the simplicity of modern front-end development.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 My Yew App. All Rights Reserved.
+    </footer>
+
+    <!-- Yew Application -->
+    <script type="module">
+        import init from "./my_yew_app.js";
+        init();
+    </script>
+</body>
+</html>
